@@ -50,6 +50,8 @@ public class DogController {
     public ResponseEntity<String> deleteDogById(@PathVariable String id){
         dogService.deleteById(id);
 
+        System.out.println("does nothing here");
+
         return ResponseEntity.status(HttpStatus.ACCEPTED).body("Dog with Id number -" + id + "- was deleted");
     }
 

@@ -35,7 +35,7 @@ public class MyControllerAdvice extends ResponseEntityExceptionHandler {
     }
 
     @Override
-    protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+    protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {                                                                                                          
 //        return super.handleHttpRequestMethodNotSupported(ex, headers, status, request);
 
         return new ResponseEntity<Object>("Please change your http method type request", HttpStatus.NOT_FOUND);
